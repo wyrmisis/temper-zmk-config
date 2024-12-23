@@ -24,7 +24,7 @@ layers:
   - - ⌘
     - num
     - {t: ⇧, s: ⇪}
-    - '&mt(LG SPACE)'
+    - {t: SPACE, h: ⌘}
     - nav
     - {t: BACKSPACE, s: Alt+ BACKSPACE}
   qwerty:
