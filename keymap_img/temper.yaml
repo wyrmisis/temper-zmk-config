@@ -35,7 +35,7 @@ layers:
     - {t: ↹, h: ⇧}
     - {t: SPACE, h: sym}
     - {t: RET, h: nav}
-    - '&backspace_delete'
+    - {t: ⌫, s: ⌦}
   sym:
   - - {t: '`', s: '~'}
     - '~'
