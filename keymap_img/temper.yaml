@@ -10,16 +10,16 @@ layers:
     - U
     - P
     - {t: '''', s: '"'}
-  - - {t: A, h: ⌘}
-    - {t: S, h: ⎇}
-    - {t: H, h: ⌃}
+  - - {t: A, h: SUPER}
+    - {t: S, h: ALT}
+    - {t: H, h: CTRL}
     - {t: T, h: ⇧}
     - G
     - Y
     - {t: N, h: ⇧}
-    - {t: E, h: ⌃}
-    - {t: O, h: ⎇}
-    - {t: I, h: ⌘}
+    - {t: E, h: CTRL}
+    - {t: O, h: ALT}
+    - {t: I, h: SUPER}
   - - Z
     - X
     - M
@@ -84,9 +84,9 @@ layers:
     - '8'
     - '9'
     - {t: '-', s: _}
-  - - ⌘
-    - ⎇
-    - ⌃
+  - - SUPER
+    - ALT
+    - CTRL
     - ⇧
     - ''
     - {t: '=', s: +}
@@ -103,7 +103,7 @@ layers:
     - {t: ▽, type: trans}
   nav:
   - ['', '', '', '', '', PSCRN, HOME, PG DN, PG UP, END]
-  - [⌘, ⎇, ⌃, ⇧, '', ←, ↓, ↑, →, '']
+  - [SUPER, ALT, CTRL, ⇧, '', ←, ↓, ↑, →, '']
   - ['', '', '', '', '', '', HOME, PG DN, PG UP, END]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
