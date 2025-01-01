@@ -31,10 +31,10 @@ layers:
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
   - - ESC
-    - num
+    - {t: RET, h: num}
     - {t: ↹, h: ⇧}
     - {t: SPACE, h: sym}
-    - {t: RET, h: nav}
+    - {t: /, h: nav}
     - {t: ⌫, s: ⌦}
   sym:
   - - {t: '`', s: '~'}
@@ -51,8 +51,8 @@ layers:
     - {t: '[', s: '{'}
     - (
     - <
-    - '"'
-    - ''''
+    - /
+    - \
     - '>'
     - )
     - {t: ']', s: '}'}
@@ -61,8 +61,8 @@ layers:
     - {t: '-', s: _}
     - {t: '=', s: +}
     - '#'
-    - /
-    - \
+    - ''
+    - ''
     - $
     - '%'
     - '@'
@@ -103,7 +103,7 @@ layers:
     - {t: ▽, type: trans}
   nav:
   - ['', '', '', '', '', PSCRN, HOME, PG DN, PG UP, END]
-  - [SUPER, ALT, CTRL, ⇧, '', ←, ↓, ↑, →, '']
+  - [SUPER, ALT, CTRL, ⇧, '', '', ←, ↓, ↑, →]
   - ['', '', '', '', '', '', HOME, PG DN, PG UP, END]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
