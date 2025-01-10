@@ -13,6 +13,35 @@
             low-power-enable;
         };
     };
+
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 13)>,
+                   <NRF_PSEL(TWIM_SCL, 1, 15)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 13)>,
+                   <NRF_PSEL(TWIM_SCL, 1, 15)>;
+            low-power-enable;
+        };
+    };
+};
+
+&i2c0 {
+    compatible = "nordic,nrf-twi";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <400000>;
+    status = "okay";
+
+    nice_view: nice_view@3c {
+        compatible = "nice,view";
+        reg = <0x3c>;
+    };
 };
 
 &spi3 {
@@ -43,5 +72,6 @@
 / {
     chosen {
         zmk,underglow = &led_strip;
+        zmk,display = &nice_view;
     };
 };

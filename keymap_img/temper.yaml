@@ -1,119 +1,110 @@
 layers:
   default:
   - - Q
+    - D
+    - R
     - W
-    - F
-    - P
     - B
     - J
-    - L
+    - F
     - U
-    - Y
+    - P
     - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
+  - - {t: A, h: SUPER}
+    - {t: S, h: ALT}
+    - {t: H, h: CTRL}
+    - {t: T, h: ⇧}
+    - G
+    - Y
+    - {t: N, h: ⇧}
+    - {t: E, h: CTRL}
+    - {t: O, h: ALT}
+    - {t: I, h: SUPER}
   - - Z
     - X
+    - M
     - C
-    - D
     - V
     - K
-    - H
+    - L
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
-  - - ⌘
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  qwerty:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - A
-    - S
-    - D
-    - F
-    - G
-    - H
-    - J
-    - K
-    - L
-    - {t: ;, s: ':'}
-  - - Z
-    - X
-    - C
-    - V
-    - B
-    - N
-    - M
-    - {t: ',', s: <}
-    - {t: ., s: '>'}
+  - - ESC
+    - {t: RET, h: num}
+    - {t: ↹, h: ⇧}
+    - {t: SPACE, h: sym}
+    - {t: /, h: nav}
+    - {t: ⌫, s: ⌦}
+  sym:
+  - - {t: '`', s: '~'}
+    - '~'
+    - '|'
+    - {t: '`', s: '~'}
+    - ''
+    - ''
+    - '&'
+    - '*'
+    - ^
+    - +
+  - - '{'
+    - {t: '[', s: '{'}
+    - (
+    - <
     - /
+    - \
+    - '>'
+    - )
+    - {t: ']', s: '}'}
+    - '}'
+  - - _
+    - {t: '-', s: _}
+    - {t: '=', s: +}
+    - '#'
+    - ''
+    - ''
+    - $
+    - '%'
+    - '@'
+    - '!'
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - +
     - '7'
     - '8'
     - '9'
     - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
+  - - SUPER
+    - ALT
+    - CTRL
+    - ⇧
+    - ''
     - {t: '=', s: +}
+    - '4'
+    - '5'
+    - '6'
+    - '*'
+  - [UNDO, CUT, COPY, PASTE, '', '', '1', '2', '3', /]
   - - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
+    - {t: '=', s: +}
     - '0'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - HOME
-    - END
-    - ↹
-    - {t: BACKSPACE, s: Alt+ BACKSPACE}
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - ↹
-    - ←
-    - ↓
-    - ↑
-    - →
-    - {t: ESC, s: '`'}
-  - - {t: ▽, type: trans}
-    - DEL
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - RET
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - ['', '', '', '', '', PSCRN, HOME, PG DN, PG UP, END]
+  - [SUPER, ALT, CTRL, ⇧, '', '', ←, ↓, ↑, →]
+  - ['', '', '', '', '', '', HOME, PG DN, PG UP, END]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -121,7 +112,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   fun:
-  - - {t: qwerty, h: toggle}
+  - - {t: ▽, type: trans}
     - MUTE
     - VOL DN
     - VOL UP
